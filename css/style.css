@@ -28,7 +28,11 @@ nav > img {
 
 .toast-pr {
 	text-align: center;
-	min-height: 300px;
+	min-height: 500px;
+}
+
+.toast-pr div {
+	margin-top: 40px;
 }
 
 .section {
