@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ID=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <title></title>
+</head>
+<body style="padding:0px; margin:0px; background-color:#000000;">
+
+    <!-- #region Jssor Slider Begin -->
+
+    <!-- Generator: Jssor Slider Maker -->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider-21.1.5.mini.js"></script>
+    <script tpye="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        var player = null;
+        var isLastPage = false;
+        var bgm = document.getElementById('background_music');
+
+        jQuery(document).ready(function ($) {
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+            
+            var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,o:-1},{b:0,d:1000,y:489,o:1,e:{y:30}},{b:2800,d:300,y:-489}],
+              [{b:-1,d:1,o:-1},{b:0,d:3200,x:1280,e:{x:24}},{b:3200,d:1000,x:-1280,o:1},{b:7200,d:1000,o:-1}],
+              [{b:-1,d:1,o:-1},{b:0,d:3200,x:-1280,y:500},{b:6200,d:1000,o:1},{b:7200,d:1000,x:1280},{b:12300,d:1000,o:-1}],
+              [{b:-1,d:1,o:-1},{b:0,d:3200,x:1280,e:{x:24}},{b:3200,d:9200,x:-1280,y:260},{b:12400,d:1200,o:1},{b:14800,d:1800,o:-1}],
+              [{b:-1,d:1,o:-1},{b:0,d:3200,y:150},{b:15800,d:1200,o:1}],
+              [{b:-1,d:1,o:-1},{b:0,d:3200,y:300},{b:17000,d:1200,o:1}],
+              [{b:-1,d:1,o:-1},{b:0,d:3200,x:1080,y:-70},{b:3200,d:300,y:70,o:1}],
+              [{b:-1,d:1,o:-1,c:{x:640.0,t:-640.0}},{b:0,d:1200,o:1,c:{x:-640.0,t:640.0},e:{c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1},{b:0,d:1200,o:1}],
+              [{b:-1,d:1,o:-1},{b:0,d:800,y:-650},{b:800,d:600,y:650,o:1,e:{y:30}}],
+              [{b:-1,d:1,o:-1},{b:0,d:3000,y:-650},{b:3000,d:600,y:650,o:1,e:{y:30}}],
+              [{b:-1,d:1,o:-1},{b:4600,d:1400,y:225,o:1}],
+              [{b:-1,d:1,o:-1,i:10},{b:6800,d:800,x:1280,o:1}],
+              [{b:-1,d:1,o:-1,c:{x:640.0,t:-640.0}},{b:0,d:1200,o:1,c:{x:-640.0,t:640.0},e:{c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1},{b:0,d:1200,o:1}],
+              [{b:-1,d:1,o:-1},{b:0,d:800,y:-650},{b:800,d:600,y:650,o:1,e:{y:30}}],
+              [{b:-1,d:1,o:-1},{b:0,d:3000,y:-650},{b:3000,d:600,y:650,o:1,e:{y:30}}],
+              [{b:-1,d:1,o:-1},{b:4600,d:1400,y:225,o:1}],
+              [{b:-1,d:1,o:-1,i:10},{b:6800,d:800,x:1280,o:1}],
+              [{b:-1,d:1,o:-1,c:{x:640.0,t:-640.0}},{b:0,d:1200,o:1,c:{x:-640.0,t:640.0},e:{c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1},{b:0,d:1200,o:1}],
+              [{b:-1,d:1,o:-1},{b:0,d:800,y:-650},{b:800,d:600,y:650,o:1,e:{y:30}}],
+              [{b:-1,d:1,o:-1},{b:0,d:3000,y:-650},{b:3000,d:600,y:650,o:1,e:{y:30}}],
+              [{b:-1,d:1,o:-1},{b:4600,d:1400,y:225,o:1}],
+              [{b:-1,d:1,o:-1,i:10},{b:6800,d:800,x:1280,o:1}],
+              [{b:-1,d:1,o:-1},{b:0,d:1200,x:-1280,o:1}],
+              [{b:-1,d:1,o:-1},{b:3000,d:1000,x:1280,o:1},{b:7400,d:1200,o:-1}],
+              [{b:-1,d:1,o:-1},{b:8200,d:1000,x:1280,o:1}],
+              [{b:-1,d:1,o:-1},{b:0,d:1200,o:1}],
+              [{b:-1,d:1,o:-1},{b:0,d:800,x:584},{b:800,d:1400,o:1}],
+              [{b:-1,d:1,o:-1},{b:0,d:600,o:1},{b:1800,d:1200,o:-1}],
+              [{b:-1,d:1,o:-1},{b:2400,d:1200,x:240,o:1},{b:3600,d:1000,y:-30,o:-0.7},{b:4600,d:3000,x:-215,o:0.6}],
+              [{b:-1,d:1,o:-1},{b:3600,d:1000,x:-1040,o:1},{b:4600,d:3000,x:-215}],
+              [{b:-1,d:1,o:-1},{b:3600,d:1200,x:240,o:1},{b:4800,d:1000,y:-30,o:-0.7},{b:5800,d:3000,x:-215,o:0.6}],
+              [{b:-1,d:1,o:-1},{b:4800,d:1000,x:-1040,o:1},{b:5800,d:3000,x:-215}],
+              [{b:-1,d:1,o:-1},{b:4800,d:1200,x:240,o:1},{b:6000,d:1000,y:-30,o:-0.7},{b:7000,d:3000,x:-215,o:0.6}],
+              [{b:-1,d:1,o:-1},{b:6000,d:1000,x:-1040,o:1},{b:7000,d:3000,x:-215}],
+              [{b:-1,d:1,o:-1},{b:6000,d:1200,x:240,o:1},{b:7200,d:1000,y:-30,o:-0.7},{b:8200,d:3000,x:-215,o:0.6}],
+              [{b:-1,d:1,o:-1},{b:7200,d:1000,x:-1040,o:1},{b:8200,d:3000,x:-215}],
+              [{b:0,d:10000,o:-1},{b:10000,d:1600,x:-767,o:1}]
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $Idle: 8000,
+              $Loop: 0,
+              $PauseOnHover: 0,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            var slideLength = jssor_1_slider.$SlidesCount();
+            jssor_1_slider.$On($JssorSlider$.$EVT_PARK, function(slideIndex, fromIndex){
+                if(slideIndex == (slideLength - 1)){
+                    isLastPage = true;
+                    pauseSlide();
+                }else {
+                    isLastPage = false;
+                    if(player != null){
+                        try {
+                            player.stopVideo();
+                            bgm.play();
+                        }
+                        catch(e) {
+                        }
+                    }
+                }
+            });
+
+            $('#restart_slide').click(restartSlideShow);
+            $('#play_img').click(playSlide);
+            $('#pause_img').click(pauseSlide);
+
+            function restartSlideShow() {
+                location.reload();
+            }
+
+            function playSlide() {
+                jssor_1_slider.$Play();
+                $('#play_status').text('Auto Slide : ON');
+                $('#pause_img').css('visibility','visible');
+                $('#play_img').css('visibility','hidden');
+            }
+
+            function pauseSlide() {
+                jssor_1_slider.$Pause();
+                $('#play_status').text('Auto Slide : OFF');
+                $('#play_img').css('visibility','visible');
+                $('#pause_img').css('visibility','hidden');
+            }
+        });
+    </script>
+
+    <style>
+        /* jssor slider bullet navigator skin 18 css */
+        /*
+        .jssorb18 div           (normal)
+        .jssorb18 div:hover     (normal mouseover)
+        .jssorb18 .av           (active)
+        .jssorb18 .av:hover     (active mouseover)
+        .jssorb18 .dn           (mousedown)
+        */
+        .jssorb18 {
+            position: absolute;
+        }
+        .jssorb18 div, .jssorb18 div:hover, .jssorb18 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            font-size: 16px;
+            background: url('img/b18.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb18 div { background-position: -3px -3px; }
+        .jssorb18 div:hover, .jssorb18 .av:hover { background-position: -33px -3px; }
+        .jssorb18 .av { background-position: -63px -3px; }
+        .jssorb18 .dn, .jssorb18 .dn:hover { background-position: -93px -3px; }
+        .jssorb18 .n  { display: none; color: #000; }
+        .jssorb18 div:hover .n, .jssorb18 .av .n, .jssorb18 .av:hover .n, .jssorb18 .dn .n { display: block; }
+    </style>
+
+    <audio id="background_music" autoplay loop src="./audio/bensound-buddy.mp3"></audio>
+    <div id="restart_slide">
+      <div class="restart-img"></div>
+    </div>
+    <div id="jssor_1" class="radial" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1280px; height: 720px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1280px; height: 720px; overflow: hidden;">
+            <div data-p="250.00" style="display: none; background-color: rgba(0,0,0,0.1);">
+                <img data-u="caption" data-t="0" style="position: absolute; top: -258px; left: 477px; width: 326px; height: 258px;" src="img/toast_logo_w.png" />
+                <div data-u="caption" data-t="1" style="position: absolute; top: 0px; left: 0px; width: 1280px; height: 200px; font-size: 40px; color: #ffffff; line-height: 70px; text-align: left; padding: 40px; box-sizing: border-box;">Are you providing an application on Smart TV?<br />
+                    Or planning to?
+                </div>
+                <div data-u="caption" data-t="2" style="position: absolute; top: 0px; left: 0px; width: 1280px; height: 200px; font-size: 40px; color: #ffffff; line-height: 70px; text-align: left; padding: 40px; box-sizing: border-box;">At minimum cost,<br />
+                    Do you want to reach the maximum number of TV platforms?
+                </div>
+                <div data-u="caption" data-t="3" style="position: absolute; top: 0px; left: 0px; width: 1280px; height: 200px; font-size: 80px; color: #ffffff; line-height: 100px; text-align: center; padding: 0px; box-sizing: border-box;">If so,<br />
+                    Please pay attention here...
+                </div>
+                <div data-u="caption" data-t="4" style="position: absolute; top: 0px; left: 0px; width: 1280px; height: 200px; font-size: 40px; color: #ffffff; line-height: 70px; text-align: center; padding: 40px; box-sizing: border-box;">Here is a revolutionary solution named TOAST.</div>
+                <div data-u="caption" data-t="5" style="position: absolute; top: 0px; left: 0px; width: 1280px; height: 200px; font-size: 40px; color: #ffffff; line-height: 70px; text-align: center; padding: 40px; box-sizing: border-box;">Write only one application code with TOAST.<br />
+                    TOAST will take care of the rest.
+                </div>
+                <img data-u="caption" data-t="6" style="position: absolute; top: 0px; left: 0px; width: 200px; height: 70px;" src="img/toastbanner.png" />
+            </div>
+            <div data-p="250.00" style="display: none; background-color: rgba(0,0,0,0.1);">
+                <div data-u="caption" data-t="7" style="position: absolute; top: 0px; left: 0px; width: 1280px; height: 70px; background-color: rgba(0,0,0,0.3); font-size: 30px; color: #ffffff; line-height: 30px; text-align: left; padding: 20px; box-sizing: border-box;">When developing Tizen Apps</div>
+                <img data-u="caption" data-t="8" style="position: absolute; top: 70px; left: 0px; width: 1280px; height: 580px;" src="img/diagram_bg.png" />
+                <img data-u="caption" data-t="9" style="position: absolute; top: 70px; left: 0px; width: 640px; height: 580px;" src="img/diagram1_l.png" />
+                <img data-u="caption" data-t="10" style="position: absolute; top: 70px; left: 640px; width: 640px; height: 580px;" src="img/diagram1_r.png" />
+                <div data-u="caption" data-t="11" style="position: absolute; top: 0px; left: 1134px; width: 150px; height: 60px; font-size: 20px; color: #ffffff; line-height: 30px; text-align: left;">Generate<br />
+                    Automatically!
+                </div>
+                <div data-u="caption" data-t="12" style="position: absolute; top: 580px; left: -1280px; width: 1280px; height: 140px; background-color: rgba(0,0,0,0.8); font-size: 30px; color: #ffffff; line-height: 40px; text-align: center; padding: 10px; box-sizing: border-box;">Without TOAST,<br />You will lose over 60 million potential users.
+                </div>
+                <img style="position: absolute; top: 0px; left: 1080px; width: 200px; height: 70px;" src="img/toastbanner.png" />
+            </div>
+            <div data-p="250.00" style="display: none; background-color: rgba(0,0,0,0.1);">
+                <div data-u="caption" data-t="13" style="position: absolute; top: 0px; left: 0px; width: 1280px; height: 70px; background-color: rgba(0,0,0,0.3); font-size: 30px; color: #ffffff; line-height: 30px; text-align: left; padding: 20px; box-sizing: border-box;">When converting to Tizen Apps</div>
+                <img data-u="caption" data-t="14" style="position: absolute; top: 70px; left: 0px; width: 1280px; height: 580px;" src="img/diagram_bg.png" />
+                <img data-u="caption" data-t="15" style="position: absolute; top: 70px; left: 0px; width: 640px; height: 580px;" src="img/diagram2_l.png" />
+                <img data-u="caption" data-t="16" style="position: absolute; top: 70px; left: 640px; width: 640px; height: 580px;" src="img/diagram2_r.png" />
+                <div data-u="caption" data-t="17" style="position: absolute; top: 0px; left: 1134px; width: 150px; height: 60px; font-size: 20px; color: #ffffff; line-height: 30px; text-align: left;">Generate<br />
+                    Automatically!
+                </div>
+                <div data-u="caption" data-t="18" style="position: absolute; top: 580px; left: -1280px; width: 1280px; height: 140px; background-color: rgba(0,0,0,0.8); font-size: 30px; color: #ffffff; line-height: 40px; text-align: center; padding: 10px; box-sizing: border-box;">Without TOAST,<br />You have to put twice as much effort to maintain multiple applications.
+                </div>
+                <img style="position: absolute; top: 0px; left: 1080px; width: 200px; height: 70px;" src="img/toastbanner.png" />
+            </div>
+            <div data-p="250.00" style="display: none; background-color: rgba(0,0,0,0.1);">
+                <div data-u="caption" data-t="19" style="position: absolute; top: 0px; left: 0px; width: 1280px; height: 70px; background-color: rgba(0,0,0,0.3); font-size: 30px; color: #ffffff; line-height: 30px; text-align: left; padding: 20px; box-sizing: border-box;">To expand to other platforms</div>
+                <img data-u="caption" data-t="20" style="position: absolute; top: 70px; left: 0px; width: 1280px; height: 580px;" src="img/diagram_bg.png" />
+                <img data-u="caption" data-t="21" style="position: absolute; top: 70px; left: 0px; width: 640px; height: 580px;" src="img/diagram3_l.png" />
+                <img data-u="caption" data-t="22" style="position: absolute; top: 70px; left: 640px; width: 640px; height: 580px;" src="img/diagram3_r.png" />
+                <div data-u="caption" data-t="23" style="position: absolute; top: 0px; left: 1145px; width: 150px; height: 60px; font-size: 20px; color: #ffffff; line-height: 30px; text-align: left;">Generate<br />
+                    Automatically!
+                </div>
+                <div data-u="caption" data-t="24" style="position: absolute; top: 580px; left: -1280px; width: 1280px; height: 140px; background-color: rgba(0,0,0,0.8); font-size: 30px; color: #ffffff; line-height: 40px; text-align: center; padding: 10px; box-sizing: border-box;">Without TOAST,<br />You need to write the application again, put three times as much effort for maintenance.<br />TOAST can easily expand the scale.
+                </div>
+                <img style="position: absolute; top: 0px; left: 1080px; width: 200px; height: 70px;" src="img/toastbanner.png" />
+            </div>
+            <div data-p="250.00" style="display: none; background-color: rgba(0,0,0,0.1);">
+                <div data-u="caption" data-t="25" style="position: absolute; top: 0px; left: 1280px; width: 1280px; height: 200px; font-size: 40px; color: #ffffff; line-height: 100px; text-align: center; padding: 40px; box-sizing: border-box;">Many developers already use TOAST.</div>
+                <div data-u="caption" data-t="26" style="position: absolute; top: 420px; left: -1280px; width: 1280px; height: 300px; font-size: 40px; color: #ffffff; line-height: 70px; text-align: center; padding: 40px; box-sizing: border-box;">TOAST is an open source.<br />
+                    Everybody can use it for free.<br />
+                    And, it is easy.
+                </div>
+                <div data-u="caption" data-t="27" style="position: absolute; top: 420px; left: -1280px; width: 1280px; height: 300px; font-size: 40px; color: #ffffff; line-height: 70px; text-align: center; padding: 40px; box-sizing: border-box;">Earlybird developers<br />already created applications using TOAST<br />
+                    for more effective business.
+                </div>
+                <img data-u="caption" data-t="28" style="position: absolute; top: 150px; left: 104px; width: 481px; height: 289px;" src="img/cloners.png" />
+                <img data-u="caption" data-t="29" style="position: absolute; top: 150px; left: 104px; width: 481px; height: 289px;" src="img/visitors.png" />
+                <img style="position: absolute; top: 0px; left: 1080px; width: 200px; height: 70px;" src="img/toastbanner.png" />
+            </div>
+            <div data-p="250.00" style="display: none; background-color: rgba(0,0,0,0.1);">
+                <div data-u="caption" data-t="30" style="position: absolute; top: 260px; left: 0px; width: 1280px; height: 200px; font-size: 70px; color: #ffffff; line-height: 200px; text-align: center; padding: 0px; box-sizing: border-box;">If you want to know more details...</div>
+                <div data-u="caption" data-t="31" style="position: absolute; top: 100px; left: 0px; width: 800px; height: 80px; font-size: 20px; color: #d5d5d5; line-height: 80px; text-align: left; padding: 0px; box-sizing: border-box;">If you want to develop a new application</div>
+                <a href="https://www.samsungdforum.com/Features/TOAST" target="_blank" data-u="caption" data-t="32" style="display: block; position: absolute; top: 100px; left: 1280px; width: 800px; height: 80px; font-size: 40px; color: #ffffff; line-height: 80px; text-align: left; padding: 0px; box-sizing: border-box;">TOAST introduction page</a>
+                <div data-u="caption" data-t="33" style="position: absolute; top: 200px; left: 0px; width: 800px; height: 80px; font-size: 20px; color: #d5d5d5; line-height: 80px; text-align: left; padding: 0px; box-sizing: border-box;">If you have an application on Samsung Legacy TV</div>
+                <a href="https://github.com/Samsung/cordova-plugin-toast/wiki/Prepare-to-convert-for-Legacy%20(A.K.A.%20Orsay)" target="_blank" data-u="caption" data-t="34" style="display: block; position: absolute; top: 200px; left: 1280px; width: 800px; height: 80px; font-size: 40px; color: #ffffff; line-height: 80px; text-align: left; padding: 0px; box-sizing: border-box;">Convert Legacy to TOAST</a>
+                <div data-u="caption" data-t="35" style="position: absolute; top: 300px; left: 0px; width: 800px; height: 80px; font-size: 20px; color: #d5d5d5; line-height: 80px; text-align: left; padding: 0px; box-sizing: border-box;">If you have an application on Samsung Tizen TV</div>
+                <a href="https://github.com/Samsung/cordova-plugin-toast/wiki/Prepare-to-convert-for-Tizen" target="_blank" data-u="caption" data-t="36" style="display: block; position: absolute; top: 300px; left: 1280px; width: 800px; height: 80px; font-size: 40px; color: #ffffff; line-height: 80px; text-align: left; padding: 0px; box-sizing: border-box;">Convert Tizen to TOAST</a>
+                <div data-u="caption" data-t="37" style="position: absolute; top: 530px; left: 0px; width: 800px; height: 80px; font-size: 20px; color: #d5d5d5; line-height: 80px; text-align: left; padding: 0px; box-sizing: border-box;">If you have any questions</div>
+                <a href="mailto:toast@samsung.com" data-u="caption" data-t="38" style="display: block; position: absolute; top: 530px; left: 1280px; width: 800px; height: 80px; font-size: 40px; color: #ffffff; line-height: 80px; text-align: left; padding: 0px; box-sizing: border-box;">Contact TOAST Team</a>
+                <div data-u="caption" data-t="39" style="position: absolute; top: 120px; left: 1280px; width: 700px; height: 480px;">
+                  <div id="player"></div>
+                </div>
+                <img style="position: absolute; top: 0px; left: 1080px; width: 200px; height: 70px;" src="img/toastbanner.png" />
+            </div>
+        </div>
+        <div class="playpause-container">
+          <div id="play_status" class="fontstyle">Auto Slide : ON</div>
+          <img id="play_img" class="playpause" src="img/play.png">
+          <img id="pause_img" class="playpause" src="img/pause.png">
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb18" style="bottom:16px;right:16px;">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:24px;height:24px;">
+                <div data-u="numbertemplate" class="n"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #endregion Jssor Slider End -->
+    <footer>Music: Buddy - Bensound.com</footer>
+    <script>
+      var bgm = document.getElementById('background_music');
+      var player_container = document.getElementById('player_container');
+      var player = document.getElementById('player');
+
+      if(navigator.userAgent.match('Firefox') !== null){
+          var screen_shot = '<a href="https://www.youtube.com/embed/vv5emwgtrDc" target="_blank"><img src="img/screenshot.PNG" width="700" height="480"></img></a>';
+          player.innerHTML = screen_shot;
+      }
+      else {
+          try{
+              function onYouTubeIframeAPIReady() {
+                  player = new YT.Player('player', {
+                      height: '480',
+                      width: '700',
+                      videoId: 'vv5emwgtrDc',
+                      events: {
+                          'onStateChange': onPlayerStateChange
+                      }
+                  });
+              }
+
+              function onPlayerStateChange(event) {
+                  if(event.data == YT.PlayerState.PLAYING){
+                      bgm.pause();
+                  }
+                  else if(event.data == YT.PlayerState.PAUSED){
+                      bgm.play();
+                  }
+                  else if(event.data == YT.PlayerState.ENDED){
+                      bgm.play();
+                      $('#restart_slide').css('visibility','visible');
+                  }
+              }
+          }
+          catch(e) {
+              console.log(e.message);
+          }
+      }
+    </script>
+</body>
+</html>
