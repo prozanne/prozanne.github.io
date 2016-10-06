@@ -1,4 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import 'https://fonts.googleapis.com/css?family=Sarala';
+
+* {
+	font-family: 'Sarala', sans-serif;
+}
 
 body {
 	width: 100%;
@@ -7,7 +11,7 @@ body {
 	padding: 0px;
 	background: #F4F4F4;
 
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Sarala', sans-serif;
 }
 
 nav > img {
@@ -17,7 +21,7 @@ nav > img {
 
 .toast {
 	width: 100%;
-	background-image: url('../assets/background.jpg');
+	background-color: #333233;
 	background-size: 100%;
 }
 
@@ -28,15 +32,27 @@ nav > img {
 
 .toast-pr {
 	text-align: center;
-	min-height: 500px;
 }
 
 .toast-pr div {
-	margin-top: 40px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .section {
-	padding: 20px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.main-img {
+	background-image: url('../assets/main_logo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 100%;
+	height: 300px;
 }
 
 h1 {
@@ -44,18 +60,41 @@ h1 {
 	text-align: center;
 }
 
-.section:nth-child(odd) {
+div p {
+	text-align: center;
+}
+
+.section:nth-child(even) {
 	background: #F4F4F4;
 	color: #4E5259;
 }
 
-.section:nth-child(even) {
+.section:nth-child(odd) {
 	background: #333233;
 	color: #D3D6DB;
 }
 
 .dim{
 	opacity: 0.2
+}
+
+.ad-container {
+	position: fixed;
+	top: 20px;
+	right: 0px;
+	width: 300px;
+	height: 170px;
+	z-index: 500;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-width: 3px;
+	border-color: orangered;
+	border-style: solid;
+	border-radius: 30px;
+}
+
+.ad-text {
+	margin-top: 35px;
+	font-size: 20px;
 }
 
 footer {

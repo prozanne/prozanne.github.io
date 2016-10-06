@@ -1,0 +1,61 @@
+@import 'https://fonts.googleapis.com/css?family=Sarala';
+
+/*
+	pop-up style
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-family: 'Sarala', sans-serif;
+}
+
+.popup-container {
+	width: 305px;
+	height: 505px;
+	background-color: white;
+    overflow: hidden;
+}
+
+.container-top {
+    width: 100%;
+    height: 50%;
+    float: left;
+    outline: 1px black dotted;
+}
+
+.container-bottom {
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+div h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+.ad-text {
+    margin: 10px;
+    font-size: 30px;
+    color: orangered;
+}
+
+.popup-container h3 {
+    padding-left: 10px;
+}
+
+.container-top ul {
+    display: block;
+    list-style-type: square !important;
+    padding-left: 20px; 
+}
+
+.popup-btn {
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
