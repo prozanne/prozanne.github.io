@@ -15,7 +15,7 @@ body {
 }
 
 nav {
-	height: 10%;
+	height: 100px;
 }
 
 nav > img {
@@ -44,8 +44,7 @@ nav > img {
 }
 
 .section {
-	padding-top: 150px;
-	height: 90%;
+	padding-top: 120px;
 }
 
 .main-img {
@@ -59,9 +58,14 @@ nav > img {
 	height: 300px;
 }
 
+.title {
+	line-height: 100px;
+	font-size: 50px;
+	padding-left: 20px;
+}
+
 h1 {
 	padding-left: 20px;
-	padding-bottom: 20px;
 	text-align: center;
 	line-height: 50px;
 	font-size: 30px;
