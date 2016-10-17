@@ -14,6 +14,10 @@ body {
 	font-family: 'Sarala', sans-serif;
 }
 
+nav {
+	height: 10%;
+}
+
 nav > img {
 	margin-left: 10px;
 	background-position: center;
@@ -40,8 +44,8 @@ nav > img {
 }
 
 .section {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 150px;
+	height: 90%;
 }
 
 .main-img {
@@ -56,10 +60,11 @@ nav > img {
 }
 
 h1 {
-	margin: 30px;
-	padding: 10px;
+	padding-left: 20px;
+	padding-bottom: 20px;
 	text-align: center;
 	line-height: 50px;
+	font-size: 30px;
 }
 
 h2 {
