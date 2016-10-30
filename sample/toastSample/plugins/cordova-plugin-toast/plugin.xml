@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns='http://www.phonegap.com/ns/plugins/1.0' id='cordova-plugin-toast' version='0.1.0'>
+	<name>cordova-plugin-toast</name>
+
+	<engines>
+		<engine name='cordova' version='>=3.5.2'/>
+	</engines>
+
+	<js-module src='www/inputdevice.js' name='inputdevice'>
+		<clobbers target='toast.inputdevice' />
+	</js-module>
+	<js-module src='www/tvchannel.js' name='tvchannel'>
+		<clobbers target='toast.tvchannel' />
+	</js-module>
+	<js-module src='www/tvwindow.js' name='tvwindow'>
+		<clobbers target='toast.tvwindow' />
+	</js-module>
+	<js-module src='www/tvaudiocontrol.js' name='tvaudiocontrol'>
+		<clobbers target='toast.tvaudiocontrol' />
+	</js-module>
+	<js-module src='www/drminfo.js' name='drminfo'>
+		<clobbers target='toast.drminfo' />
+	</js-module>
+	<js-module src='www/application.js' name='application'>
+		<clobbers target='toast.application' />
+	</js-module>
+	<js-module src='www/Media.js' name='Media'>
+		<clobbers target='toast.Media' />
+	</js-module>
+	<js-module src='www/MediaPlugin.js' name='MediaPlugin'>
+		<clobbers target='toast.MediaPlugin' />
+	</js-module>
+	<js-module src='www/util.js' name='util'>
+	</js-module>
+
+	<!-- browser -->
+	<platform name='browser'>
+		<js-module src='src/browser/inputdeviceProxy.js' name='inputdeviceProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/browser/tvwindowProxy.js' name='tvwindowProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/browser/tvchannelProxy.js' name='tvchannelProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/browser/sampleEPG.js' name='sampleEPG'>
+		</js-module>
+		<js-module src='src/browser/tvaudiocontrolProxy.js' name='tvaudiocontrolProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/browser/drminfoProxy.js' name='drminfoProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/browser/applicationProxy.js' name='applicationProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/browser/mediaProxy.js' name='mediaProxy'>
+			<runs />
+		</js-module>
+	</platform>
+
+	<!-- sectv-orsay -->
+	<platform name='sectv-orsay'>
+		<js-module src='src/sectv-orsay/inputdeviceProxy.js' name='inputdeviceProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-orsay/tvwindowProxy.js' name='tvwindowProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-orsay/tvchannelProxy.js' name='tvchannelProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-orsay/tvaudiocontrolProxy.js' name='tvaudiocontrolProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-orsay/drminfoProxy.js' name='drminfoProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-orsay/applicationProxy.js' name='applicationProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-orsay/mediaProxy.js' name='mediaProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-orsay/MediaPluginWideVine.js' name='MediaPluginWideVine'>
+			<clobbers target='toast.MediaPluginWideVine' />
+		</js-module>
+		<js-module src='src/sectv-orsay/MediaPluginHLS.js' name='MediaPluginHLS'>
+			<clobbers target='toast.MediaPluginHLS' />
+		</js-module>
+		<js-module src='src/sectv-orsay/MediaPluginUHD.js' name='MediaPluginUHD'>
+			<clobbers target='toast.MediaPluginUHD' />
+		</js-module>
+		<js-module src='src/sectv-orsay/MediaPluginPlayReady.js' name='MediaPluginPlayReady'>
+			<clobbers target='toast.MediaPluginPlayReady' />
+		</js-module>
+	</platform>
+
+	<!-- sectv-tizen -->
+	<platform name='sectv-tizen'>
+		<js-module src='src/sectv-tizen/inputdeviceProxy.js' name='inputdeviceProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-tizen/tvwindowProxy.js' name='tvwindowProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-tizen/tvchannelProxy.js' name='tvchannelProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-tizen/tvaudiocontrolProxy.js' name='tvaudiocontrolProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-tizen/drminfoProxy.js' name='drminfoProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-tizen/applicationProxy.js' name='applicationProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-tizen/mediaProxy.js' name='mediaProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/sectv-tizen/MediaPluginWideVine.js' name='MediaPluginWideVine'>
+			<clobbers target='toast.MediaPluginWideVine' />
+		</js-module>
+		<js-module src='src/sectv-tizen/MediaPluginHLS.js' name='MediaPluginHLS'>
+			<clobbers target='toast.MediaPluginHLS' />
+		</js-module>
+		<js-module src='src/sectv-tizen/MediaPluginUHD.js' name='MediaPluginUHD'>
+			<clobbers target='toast.MediaPluginUHD' />
+		</js-module>
+		<js-module src='src/sectv-tizen/MediaPluginPlayReady.js' name='MediaPluginPlayReady'>
+			<clobbers target='toast.MediaPluginPlayReady' />
+		</js-module>
+	</platform>
+
+	<!-- tv-webos -->
+	<platform name='tv-webos'>
+		<js-module src='src/tv-webos/inputdeviceProxy.js' name='inputdeviceProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/tv-webos/tvaudiocontrolProxy.js' name='tvaudiocontrolProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/tv-webos/applicationProxy.js' name='applicationProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/tv-webos/mediaProxy.js' name='mediaProxy'>
+			<runs />
+		</js-module>
+		<js-module src='src/tv-webos/MediaPluginWideVine.js' name='MediaPluginWideVine'>
+			<clobbers target='toast.MediaPluginWideVine' />
+		</js-module>
+		<js-module src='src/tv-webos/MediaPluginHLS.js' name='MediaPluginHLS'>
+			<clobbers target='toast.MediaPluginHLS' />
+		</js-module>
+		<js-module src='src/tv-webos/MediaPluginUHD.js' name='MediaPluginUHD'>
+			<clobbers target='toast.MediaPluginUHD' />
+		</js-module>
+		<js-module src='src/tv-webos/MediaPluginPlayReady.js' name='MediaPluginPlayReady'>
+			<clobbers target='toast.MediaPluginPlayReady' />
+		</js-module>
+	</platform>
+</plugin>

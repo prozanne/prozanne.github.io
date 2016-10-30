@@ -1,0 +1,12 @@
+{
+	"id": "com.toast.app",
+	"version": "1.0.0",
+	"vendor": "My Company",
+	"type": "web",
+	"main": "index.html",
+	"title": "toastSample",
+	"icon": "img/logo.png",
+	"largeIcon": "img/logo.png",
+	"resolution": "1920x1080",
+	"disableBackHistoryAPI": true
+}
