@@ -1,0 +1,97 @@
+{
+    "sections": [
+                    {
+                        "title": "멜론차트",
+                        "tiles":[
+                                    {
+                                        "title": "TT",
+                                        "subtitle": "TWICE (트와이스)",
+                                        "image_ratio": "1by1",
+                                        "image_url": "http://image.melon.co.kr/cm/album/images/004/67/256/467256_org.jpg",
+                                        "action_data": "{\"ctype\": 1, \"cjson\": {\"songId\":\"30054344\",\"songName\":\"TT\",\"artistNames\":\"TWICE (트와이스)\",\"albumName\":\"TWICEcoaster : LANE 1\",\"albumId\":\"10008861\",\"playTime\":\"03:33\",\"isAdult\":\"false\",\"menuId\":\"19030101\"}}",
+                                        "is_playable": false
+                                    },
+                                    {
+                                        "title": "TT",
+                                        "subtitle": "TWICE (트와이스)",
+                                        "image_ratio": "1by1",
+                                        "image_url": "http://image.melon.co.kr/cm/album/images/004/67/256/467256_org.jpg",
+                                        "action_data": "{\"ctype\": 1, \"cjson\":{\"songId\": 30063677,\"songName\":\"TT\",\"artistNames\":\"TWICE (트와이스)\",\"albumName\":\"TWICEcoaster : LANE 1\",\"albumId\":467256,\"playTime\":\"03:33\",\"isAdult\": false,\"menuId\": 15010101}}",
+                                        "is_playable": true
+                                    }
+                                ]
+                    },
+                    {
+                        "title": "최신음악",
+                        "tiles": [
+                                    {
+                                        "title": "우주를 줄게",
+                                        "subtitle": "볼빨간사춘기",
+                                        "image_ratio": "1by1",
+                                        "image_url": "http://image.melon.co.kr/cm/album/images/004/67/256/467256_org.jpg",
+                                        "action_data": "{\"ctype\": 1, \"cjson\": {\"songId\":\"9620469\",\"songName\":\"우주를 줄게\",\"artistNames\":\"볼빨간사춘기\",\"albumName\":\"Full Album RED PLANET\",\"albumId\":\"2707131\",\"playTime\":\"03:33\",\"isAdult\":\"false\",\"menuId\":\"19030101\"}}",
+                                        "is_playable": false
+                                    },
+                                    {
+                                        "title": "어떻게 지내",
+                                        "subtitle": "Crush",
+                                        "image_ratio": "1by1",
+                                        "image_url": "http://image.melon.co.kr/cm/album/images/004/67/256/467256_org.jpg",
+                                        "action_data": "{\"ctype\": 1, \"cjson\": {\"songId\":\"30038185\",\"songName\":\"어떻게 지내\",\"artistNames\":\"Crush\",\"albumName\":\"wonderlust\",\"albumId\":\"10006417\",\"playTime\":\"03:51\",\"isAdult\":\"false\",\"menuId\":\"19030101\"}}",
+                                        "is_playable": false
+                                    },
+                                    {
+                                        "title": "우주를 줄게",
+                                        "subtitle": "볼빨간사춘기",
+                                        "image_ratio": "1by1",
+                                        "image_url": "http://image.melon.co.kr/cm/album/images/021/32/612/2132612_org.jpg",
+                                        "action_data": "{\"ctype\": 1, \"cjson\":{\"songId\": 30063677,\"songName\":\"우주를 줄게\",\"artistNames\":\"볼빨간사춘기\",\"albumName\":\"Full Album RED PLANET\",\"albumId\":\"467256\",\"playTime\":\"03:33\",\"isAdult\": false,\"menuId\": 15010101}}",
+                                        "is_playable": true
+                                    }
+                                ]
+                    },
+                    {
+                        "title": "멜론DJ",
+                        "tiles":[
+                                    {
+                                        "title": "내가 저지른 사랑",
+                                        "subtitle": "임창정",
+                                        "image_ratio": "1by1",
+                                        "image_url": "http://image.melon.co.kr/cm/album/images/020/36/035/2036035_org.jpg",
+                                        "action_data": "{\"ctype\": 1, \"cjson\":{\"songId\": 30063677,\"songName\":\"내가 저지른 사랑\",\"artistNames\":\"임창정\",\"albumName\":\"I`M\",\"albumId\":\"467256\",\"playTime\":\"03:33\",\"isAdult\": false,\"menuId\": 15010101}}",
+                                        "is_playable": true
+                                    }
+                                ]
+                    },
+                    {
+                        "title": "멜론TV",
+                        "tiles":[
+                                    {
+                                        "title": "Love Like This (Feat. Dok2)",
+                                        "subtitle": "효린",
+                                        "image_ratio": "16by9",
+                                        "image_url": "http://image.melon.co.kr/cm/mv/images/wide/501/56/190/50156190_org.jpg",
+                                        "action_data": "{\"ctype\": 2, \"cjson\":{\"mvId\": 30054344,\"mvTitle\":\"Love Like This (Feat. Dok2)\",\"artistNames\":\"효린\",\"playTime\":\"03:33\",\"songId\":\"\",\"isAdult\": false,\"menuId\": 15010101}}",
+                                        "is_playable": true
+                                    },
+                                    {
+                                        "title": "LOSE CONTROL (失控)",
+                                        "subtitle": "레이 (LAY)",
+                                        "image_ratio": "1by1",
+                                        "image_url": "http://image.melon.co.kr/cm/mv/images/wide/501/56/190/50156190_org.jpg",
+                                        "action_data": "{\"ctype\": 2, \"cjson\": {\"mvId\":\"50156522\",\"mvTitle\":\"LOSE CONTROL (失控)\",\"artistNames\":\"레이 (LAY)\",\"playTime\":\"04:03\",\"songId\":\"30063172\",\"isAdult\":\"false\",\"menuId\":\"21020101\"}}",
+                                        "is_playable": true
+                                    },
+                                    {
+                                        "title": "Chill해",
+                                        "subtitle": "나아람",
+                                        "image_ratio": "1by1",
+                                        "image_url": "http://image.melon.co.kr/cm/mv/images/wide/501/56/190/50156190_org.jpg",
+                                        "action_data": "{\"ctype\": 2, \"cjson\": {\"mvId\":\"50156497\",\"mvTitle\":\"Chill해\",\"artistNames\":\"나아람\",\"playTime\":\"02:38\",\"songId\":\"30063602\",\"isAdult\":\"true\",\"menuId\":\"21020101\"}}",
+                                        "is_playable": true
+                                    }
+                                ]
+                    }
+                    
+                ]
+}
