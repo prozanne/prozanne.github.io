@@ -1,0 +1,32 @@
+{"sections":[
+    {
+        "title":"최신음악",
+        "tiles":[
+            {
+                "title":"Make You Feel My Love",
+                "subtitle":"adele",
+                "image_ratio":"1by1",
+                "image_url":"http://image.melon.co.kr/cm/album/images/004/67/256/467256_org.jpg",
+                "action_data":"{\"ctype\":\"1\",\"cjson\":{\"songId\":\"2021842\",\"songName\":\"Make You Feel My Love\",\"artistNames\":[\"adele\"],\"albumName\":\"19 (Deluxe Edition)\",\"albumId\":\"467256\",\"playTime\":\"216\",\"isAdult\":false,\"menuId\":\"15010101\"}}",
+                "is_playable":true
+            }
+        ]
+    },
+    {
+        "title":"멜론TV",
+        "tiles":[
+            {
+                "title":"everglow",
+                "subtitle":"coldplay",
+                "image_ratio":"16by9",
+                "image_url":"http://image.melon.co.kr/cm/mv/images/wide/501/56/190/50156190_org.jpg",
+                "action_data":"{\"ctype\":2,\"cjson\":{\"mvId\":\"50156190\",\"mvTitle\":\"everglow\",\"artistNames\":[\"coldplay\"],\"playTime\":\"280\",\"songId\":\"\",\"isAdult\":false,\"menuId\":\"15010101\"}}",
+                "is_playable":true
+            }
+        ]
+    }
+],
+"httpDomain":null,
+"httpsDomain":null,
+"staticDomain":null
+}
