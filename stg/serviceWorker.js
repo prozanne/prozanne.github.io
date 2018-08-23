@@ -22,12 +22,12 @@ var filesToCache = [
     '/assets/platform_webos.png',
     '/assets/title.png',
     '/assets/title_sub.png',
-    '/assets/icons/icon-128x128.png',
-    '/assets/icons/icon-144x144.png',
-    '/assets/icons/icon-152x152.png',
-    '/assets/icons/icon-192x192.png',
-    '/assets/icons/icon-256x256.png',
-    '/assets/icons/icon-512x512.png',
+    '/assets/icon-128x128.png',
+    '/assets/icon-144x144.png',
+    '/assets/icon-152x152.png',
+    '/assets/icon-192x192.png',
+    '/assets/icon-256x256.png',
+    '/assets/icon-512x512.png',
     '/README.md'
 ];
 
