@@ -28,7 +28,7 @@ var filesToCache = [
     '/assets/icons/icon-192x192.png',
     '/assets/icons/icon-256x256.png',
     '/assets/icons/icon-512x512.png',
-    '/README.md',
+    '/README.md'
 ];
 
 self.addEventListener('install', function(e) {
