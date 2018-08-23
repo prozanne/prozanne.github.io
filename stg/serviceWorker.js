@@ -2,6 +2,7 @@ var dataCacheName = 'toastData-v1';
 var cacheName = 'toast-v1';
 var filesToCache = [
     '/',
+    '/manifest.json',
     '/index.html',
     '/popup.html',
     '/js/main.js',
@@ -21,6 +22,12 @@ var filesToCache = [
     '/assets/platform_webos.png',
     '/assets/title.png',
     '/assets/title_sub.png',
+    '/assets/icons/icon-128x128.png',
+    '/assets/icons/icon-144x144.png',
+    '/assets/icons/icon-152x152.png',
+    '/assets/icons/icon-192x192.png',
+    '/assets/icons/icon-256x256.png',
+    '/assets/icons/icon-512x512.png',
     '/README.md',
 ];
 
