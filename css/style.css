@@ -1,0 +1,118 @@
+@import 'https://fonts.googleapis.com/css?family=Sarala';
+
+* {
+	font-family: 'Sarala', sans-serif;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: #F4F4F4;
+
+	font-family: 'Sarala', sans-serif;
+}
+
+nav > img {
+	margin-left: 10px;
+	background-position: center;
+}
+
+.toast {
+	width: 100%;
+	background-color: #333233;
+	background-size: 100%;
+}
+
+.toast > .blur {
+	min-height: inherit;
+	background: rgba(0,0,0,0.5);
+}
+
+.toast-pr {
+	text-align: center;
+}
+
+.toast-pr div {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.section {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.main-img {
+	background-image: url('../assets/main_logo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 100%;
+	height: 300px;
+}
+
+h1 {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+div p {
+	text-align: center;
+}
+
+.section:nth-child(even) {
+	background: #F4F4F4;
+	color: #4E5259;
+}
+
+.section:nth-child(odd) {
+	background: #333233;
+	color: #D3D6DB;
+}
+
+.dim{
+	opacity: 0.2
+}
+
+.ad-container {
+	position: fixed;
+	top: 20px;
+	right: 0px;
+	width: 300px;
+	height: 170px;
+	z-index: 500;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-width: 3px;
+	border-color: orangered;
+	border-style: solid;
+	border-radius: 30px;
+}
+
+.ad-text {
+	margin: 10px;
+	margin-top: 35px;
+	font-size: 20px;
+}
+
+#editor {
+	height: 300px;
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	left: 0;
+}
+
+#show_area {
+	width: 100%;
+	height: 300px;
+	background: white;
+}
+
+footer {
+	padding: 20px;
+	background: #F4F4F4;
+}

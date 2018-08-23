@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 1920px;
+	height: 1080px;
+	
+    background-color: #ffffff;
+    
+    overflow: hidden;
+}
+
+.container {
+	margin: 0%;
+	padding: 0%;
+	width: 50%;
+	height: 100%;
+}
+
+.container:nth-child(odd) {
+	background-color: #eeeeee;
+	float: left;
+}
+
+.container:nth-child(even) {
+	background-color: #ffffff;
+	float: right;
+}
+
+.top-wrapper {
+	float: left;
+	
+	width: 100%;
+	height: 10%;
+}
+
+.top-wrapper > p{
+	width: 100%;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.bottom-wrapper {
+	float: left;
+	
+	width: 100%;
+	height: 90%;	
+}
+
+.menu {
+	float: left;
+	
+	width: 100%;
+	height: 20%;
+}
+
+.content {
+	float: left;
+	
+	width: 100%;
+	height: 50%;
+}
+
+.debug {
+	position: absolute;
+	
+	padding-top: 20px;
+	padding-bottom: 50px;
+	
+	top: 830px;
+	
+	width: 960px;
+	height: 230px;
+	
+	background-color: black;
+	color: lime;
+	
+	font-size: 30px;
+	
+	overflow: scroll;
+}
+
+#videoLog {
+	left: 0px;
+}
+
+#tvLog {
+	left: 960px;
+}
+
+.button {
+	float: left;
+	
+	width: 250px;
+	height: 80px;
+	line-height: 60px;
+	
+	font-size: 40px;	
+}
+
+.button:hover {
+	background-color: #00a1f1;
+	outline: 5px black solid;
+	z-index: 200;
+}
+
+#video {
+	width: 960px;
+	height: 540px;
+}

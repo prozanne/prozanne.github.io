@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="ID=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="./assets/icon.png">
+
+		<title>Let's TOAST</title>
+
+		<!-- bootstrap -->
+		<link href="./css/bootstrap.css" rel="stylesheet">
+		<link href="./css/bootstrap-theme.css" rel="stylesheet">
+
+		<link href="./css/style.css" rel="stylesheet">
+		<script type='text/javascript' src='js/main.js'></script>
+	</head>
+	<body onload="showADPopup()">
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<img class="pull-left" src="./assets/title.png">
+				<img class="pull-right" src="./assets/title_sub.png">
+			</nav>
+		</header>
+		<div class="ad-container">
+			<p class="ad-text">Simple TOAST video to help you understand easily.</p>
+			<p><a class="btn btn-danger btn-lg" role="button" onclick='window.open("http://developer.samsung.com/onlinedocs/tv/toastAD/", "_blank", "width=1300, height=750, toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=no, left=150, top=150");'>Invest only 30 seconds</a></p>
+		</div>
+		<div class="toast">
+			<div class="blur">
+				<div class="container">
+					<div class="jumbotron">
+						<div class="main-img"></div>
+						<p>TOAST is very useful tool for TV Web Application developer.<br>This is Samsung's open source project that was created to minimize overhead in TV web application development. This will enable developers to generate a multiple-platform solution for all of their TV web applications. We hope you can develop a multiple platform solution for ALL your TV web applications. <br><br><h2>Let's TOAST!</h2></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section container-fluid">
+			<h1>About TOAST</h1>
+			<div class="row toast-pr">
+				<div class="col-md-4">
+					<img class="img-circle" src="./assets/about_multiple.png" width="150" height="150">
+					<h2>Multiple Platform</h2>
+					<p>Multiple platform development solution for TV web application. Write once, generate multiple TV app packages.</p>
+				</div>
+				<div class="col-md-4">
+					<img class="img-circle" src="./assets/about_github.png" width="150" height="150">
+					<h2>Open Source</h2>
+					<p>Currently anyone can use and participate in our project. All are to have an opportunity. <br> You don't need to hesitate, Join us.</p>
+				</div>
+				<div class="col-md-4">
+					<img class="img-circle" src="./assets/about_cordova.png" width="150" height="150">
+					<h2>Easy to use</h2>
+					<p>TOAST is based on Cordova. It is very familiar to every app developers. Let's start to create a great application using TOAST.</p>
+				</div>
+			</div>
+		</div>
+		<div class="section container-fluid">
+			<h1>Supported Platforms</h1>
+			<div class="row toast-pr">
+				<div class="col-md-4">
+					<img class="img-circle" src="./assets/platform_orsay.png" width="150" height="150">
+					<h2>Samsung Smart TV</h2>
+				</div>
+				<div class="col-md-4">
+					<img class="img-circle" src="./assets/platform_tizen.png" width="150" height="150">
+					<h2>Samsung Tizen TV</h2>
+				</div>
+				<div class="col-md-4">
+					<img class="img-circle" src="./assets/platform_browser.png" width="150" height="150">
+					<h2>Browser</h2>
+				</div>
+				<div class="col-md-4">
+					<img class="img-circle" src="./assets/platform_webos.png" width="150" height="150">
+					<h2>WebOS</h2>
+				</div>
+				<div class="col-md-4">
+					<img class="img-circle dim" src="./assets/platform_android.png" width="150" height="150">
+					<h2>Coming soon</h2>
+				</div>
+			</div>
+		</div>
+		<div class="section container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<h1 class="text-center">Wiki</h1>
+					<div class="col-md-6">
+						<p><a class="btn btn-info btn-lg" href="https://github.com/Samsung/cordova-plugin-toast/wiki/Prepare-to-start" role="button">Prepare to start</a>
+						<p>This section would help you to start TOAST. It contains precondition, configuration and how to get sources on github. Don't be worry to start. It would be easy.</p>
+						<p><a class="btn btn-info btn-lg" href="https://github.com/Samsung/cordova-plugin-toast/wiki/Create-Project" role="button">Create project</a>
+						<p>It explains how to create TOAST project first time. It is based on easy tutorial. You only follow this guide to create empty project or templated project.</p>
+					</div>
+					<div class="col-md-6">
+						<p><a class="btn btn-info btn-lg" href="https://github.com/Samsung/cordova-plugin-toast/wiki/Prepare-to-convert-for-Tizen" role="button">Convert Tizen to TOAST</a>
+						<p>It describes how to convert applications from Tizen app to TOAST app. If you have already tizen web application, It would be simply converted to TOAST.</p>
+						<p><a class="btn btn-info btn-lg" href="https://github.com/Samsung/cordova-plugin-toast/wiki/Prepare-to-convert-for-Legacy%20(A.K.A.%20Orsay)" role="button">Convert Orsay to TOAST</a>
+						<p>It describes how to convert applications from Orsay app to TOAST app. If you have already tizen web application, It would be simply converted to TOAST.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+				<h1 class="text-center">Hosted On Github</h1>
+					<div class="col-md-6">
+						<p><a class="btn btn-info btn-lg" href="https://github.com/Samsung/cordova-plugin-toast" role="button">cordova-plugin-toast</a>
+						<p>Cordova plugin that provides TV Specific functionalities.<br>Currently we support following features: toast.Media, toast.MediaPlugin, toast.drminfo, toast.application, toast.inputdevice, toast.tvaudiocontrol, toast.tvwindow, toast.tvchannel</p>
+						<p><a class="btn btn-info btn-lg" href="https://github.com/Samsung/grunt-cordova-sectv" role="button">grunt-cordova-sectv</a>
+						<p>Grunt task for prepare and build the cordova project with sectv-orsay and sectv-tizen platforms.</p>
+					</div>
+					<div class="col-md-6">
+						<p><a class="btn btn-info btn-lg" href="https://github.com/Samsung/cordova-sectv-tizen" role="button">cordova-sectv-tizen</a>
+						<p>cordova-sectv-tizen is an TV application library that allows for Cordova-based projects to be built for Samsung Tizen TV Platform.</p>
+						<p><a class="btn btn-info btn-lg" href="https://github.com/Samsung/cordova-sectv-orsay" role="button">cordova-sectv-orsay</a>
+						<p>cordova-sectv-orsay is an TV application library that allows for Cordova-based projects to be built for the Legacy Samsung Smart TV (A.K.A Orsay) Platform.</p>
+					</div>
+					<div class="col-md-6">
+						<p><a class="btn btn-info btn-lg" href="https://github.com/Samsung/cordova-tv-webos" role="button">cordova-tv-webos</a>
+						<p>cordova-tv-webos is an TV application library that allows for Cordova-based projects to be built for the WebOS TV Platform.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Fast Prototype -->
+		<div class="section container-fluid">
+			<h1 class="text-center">TOAST 맛보기</h1>
+			<div class="row">
+				<div class="col-md-6">
+					<div id="editor"></div>
+				</div>
+				<div class="col-md-6">
+					<div id="show_area"></textarea>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<footer>
+			<p class="pull-right"><a href="#">Back To Top</a></p>
+			<p class="pull-left">All contents copyright &copy; Samsung Electronics Co., Ltd. | <a href="mailto:toast@samsung.com">Contact to toast master (toast@samsung.com)</a></p>
+		</footer>
+		<script type='text/javascript' src='lib/src-noconflict/ace.js'></script>
+		<script>
+			var editor = ace.edit("editor");
+			editor.setTheme("ace/theme/monokai");
+			editor.getSession().setMode("ace/mode/javascript");
+			editor.setValue('//Feel free to use TOAST API', 1);
+		</script>
+	</body>
+</html>
