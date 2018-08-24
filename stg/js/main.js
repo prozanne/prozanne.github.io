@@ -9,7 +9,7 @@ function allowNotification() {
             setTimeout(function() {
                 var currentTime = new Date();
                 var notifTitle = 'TOAST PWA';
-                var notifBody = 'This is for TOAST Notification ! Current time is ' + currentTime;
+                var notifBody = 'This is for TOAST Notification ! \n Current time is ' + currentTime;
                 var notifImg = 'assets/icon-128x128.png';
                 var options = {
                     body: notifBody,
