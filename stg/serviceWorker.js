@@ -4,7 +4,7 @@ var filesToCache = [
     './',
     './manifest.json',
     './index.html',
-    './popup.html',
+    // './popup.html',
     './js/main.js',
     './css/bootstrap-theme.css',
     './css/bootstrap.css',
