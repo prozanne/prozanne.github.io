@@ -7,9 +7,9 @@ function allowNotification() {
         // 알람 권한 받기
         if(result === 'granted') {
             setTimeout(function() {
-                var randomNumber = Math.floor(Math.random()*100);
+                var currentTime = new Date();
                 var notifTitle = 'TOAST PWA';
-                var notifBody = 'This is for TOAST Notification ! The number is ' + randomNumber;
+                var notifBody = 'This is for TOAST Notification ! Current time is ' + currentTime;
                 var notifImg = 'assets/icon-128x128.png';
                 var options = {
                     body: notifBody,
