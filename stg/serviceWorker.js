@@ -2,7 +2,7 @@ var dataCacheName = 'toastData-v1';
 var cacheName = 'toast-v1';
 var filesToCache = [
     './',
-    '/stg/manifest.json',
+    './manifest.json',
     './index.html',
     './popup.html',
     './js/main.js',
