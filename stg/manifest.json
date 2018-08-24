@@ -1,6 +1,6 @@
 {
-    "name": "Toast PWA",
-    "short_name": "Toast PWA",
+    "name": "ToastPWA",
+    "short_name": "ToastPWA",
     "icons": [{
         "src": "assets/icon-128x128.png",
         "sizes": "128x128",
@@ -26,7 +26,7 @@
         "sizes": "512x512",
         "type": "image/png"
       }],
-    "start_url": ".",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#3E4EB8",
     "theme_color": "#317EFB",
